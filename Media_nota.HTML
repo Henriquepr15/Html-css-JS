@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada -->
+<html lang="pt-br">
+<head>
+    <title>Media de nota</title>    
+    <meta charset="utf-8">
+    <meta name="author" content="Henrique Pires Ricoy de Carvalho">
+    <meta name="description" content="lista de documentos">
+<style>
+h1{   
+    line-height: 100px;
+}
+img {
+ max-width: 100%;
+ max-height: 100%;
+ height: 75px;
+ width: 75px;
+ float:left ;
+}
+script{font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+}
+body{
+    background-image:url("\newtonimg.png");
+    /* background-position: top 10%;
+    background-position: left 10%; */
+    background-repeat: no-repeat;
+    background-position: 10% 7%;
+    background-size: 200px;
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 50em;
+    text-align: center;
+    margin-top: 2cm;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+
+}
+p{
+    /* margin-bottom: 90%; */
+    margin-top: 65%;
+    
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+</style>
+
+</head>
+
+<body>
+    <h1>
+        Media Bimestral        
+    </h1> 
+
+    <!-- <figure id="logonewton" class="logo">
+        <img src="\newtonlogo2.png">
+    </figure> -->
+
+    <!-- <img src="\newtonlogo2.png"> -->
+    <script id="corpoJS">
+
+    
+    // Ctrl+; gera as duas barras, que se usa como comentario. Um tipo de anotação.
+    
+    // Outputs
+    // Alert("Mensagem")
+    // Console.log("Teste 2")
+    // document.write("Teste de Output")
+    
+    // Imputs
+    // prompt("digite seu nome")
+     
+    var nome = prompt("Digite seu nome completo.");
+    
+    alert("Bem vindo ao nosso sistema Sr(a) " + nome);
+    
+    do {
+        var nota1 = prompt("digite sua primeira nota.");
+    } while (parseFloat(nota1) != nota1);    
+    // var nota1 = prompt("digite sua primeira nota.");
+
+    do {
+        var nota2 = prompt("digite sua segunda nota.");
+    } while (parseFloat(nota2) != nota2);
+    // var nota2 = prompt("digite sua segunda nota.");
+
+    do {
+        var nota3 = prompt("digite sua terceira nota.");
+    } while (parseFloat(nota3) != nota3);
+    // var nota3 = prompt("digite sua terceira nota.");
+
+    do {
+        var nota4 = prompt("digite sua quarta nota.");
+    } while (parseFloat(nota4) != nota4);
+    // var nota4 = prompt("digite sua quarta nota.");
+
+
+    // var media = 0;
+    var soma = ( parseFloat (nota1) + 
+                 parseFloat (nota2) + 
+                 parseFloat (nota3) + 
+                 parseFloat (nota4));
+    
+       var media = soma / 4;
+    
+    
+    
+    document.write("Sr(a) " + nome + "<br>");
+    
+    document.write("A soma das suas notas é " + soma + "<br>");
+    
+    document.write("A média das suas notas é " + media + "<br>" + "<br>");
+    
+    document.write("suas notas:" + nota1 + "+" + nota2 + "+" + nota3 + "+" + nota4 + "=" + soma + "<br>" );
+    
+    document.write("media de suas notas:" + soma + "/" + "4" + "=" + media + "<br>" + "<br>" );
+    
+    // document.write(notas);
+    
+    // Se a média for menor que 70, REPROVADO!
+    // Se não ele esta APROVADO!!!
+    
+
+    
+    if(soma != 0){
+    
+       if(soma < soma * 0.70){
+        // Se der true cai aqui
+        document.write("Estude mais, você esta REPROVADO!!!");
+       }
+    
+       else{
+        // Se der false cai aqui
+        document.write("Suas ferias estão garantidas, PARABENS voce foi APROVADO!!!");
+       }
+    
+    }
+    
+    
+    else{
+    
+        document.write("Estude mais, você esta REPROVADO!!!");
+    
+    }
+     
+    //  document.write("Henrique Pires" + "<br>" + "RA:12115257" + "<br>" + "Engenharia da Computação." + "<br>" + "Centro Universitário Newton Paiva"+"<br>"+"Av. Presidente Carlos Luz, 220 - Caiçaras, Belo Horizonte - MG, 31250-810");
+    
+
+    
+    </script>
+
+<p>
+    Henrique Pires <br>
+    RA:12115257<br>
+    Engenharia da Computação.<br>
+    Centro Universitário Newton Paiva<br>
+    Av. Presidente Carlos Luz, 220 - Caiçaras, Belo Horizonte - MG, 31250-810<br>
+</p>
+
+
+
+
+</body>
+
+
+
+</html>
